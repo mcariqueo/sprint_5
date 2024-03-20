@@ -45,3 +45,48 @@ Per a aconseguir això, s'ha sol·licitat la creació d'un indicador clau de ren
 4. Obtengo el KPI de acuerdo a la visulaizacion correspondiente: 
 
     ![](files_sprint_5/S5N1E2b.png)
+
+
+## Exercici 3
+
+Des de màrqueting et sol·liciten crear una nova mesura DAX que calculi la mitjana de transaccions realitzades durant l'any 2021. 
+
+Mesura DAX  y resultado en etiqueta: 
+    ![](files_sprint_5/S5N1E3a.png)
+
+
+És important recordar que l'empresa té un objectiu de vendes establert en 250 transaccions.     
+Lo primero es crear la nueva medida de KPI 250 transacciones:
+
+![](files_sprint_5/S5N1E3b.png)
+
+Finalmente tenemos: 
+
+![](files_sprint_5/S5N1E3c.png)
+
+
+## Exercici 4
+Realitza el mateix procediment que vas realitzar en l'exercici 3 per a l'any 2022.
+
+![](files_sprint_5/S5N1E4a.png)
+
+
+## Exercici 5
+
+L'objectiu d'aquest exercici és crear una KPI que visualitzi la quantitat d'empreses per país que participen en les transaccions.       
+
+La meta empresarial és garantir que hi hagi almenys 3 empreses participants per país.    
+
+`KPI = 3`
+
+Per a aconseguir això, serà necessari utilitzar DAX per a calcular i representar aquesta informació de manera clara i concisa: 
+
+![](files_sprint_5/S5N1E5a.png)
+
+
+## Exercici 6
+
+
+Genero un filtro para mostrar solo los meses con datos:
+
+![](files_sprint_5/S5N1E6a.png)
