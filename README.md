@@ -64,3 +64,9 @@ Incluya los datos de partida para compararlos, lo que garantizará que el rendim
 Determine la frecuencia con la que desea supervisar los KPI y actúe en consecuencia. ¿Será diaria o semanal la revisión de los paneles de KPI? ¿Las acciones se llevarán a cabo solo después de generar informes, o las partes interesadas y los miembros del equipo podrán ajustar las tácticas durante el proceso?
 
 Asegúrese de contar con un sistema simple e integral para la protección de datos en los paneles de datos, con controles para el uso compartido fuera de la organización.
+
+
+Tareas de un analista de datos
+
+
+![](files_sprint_5/task_dA.png)

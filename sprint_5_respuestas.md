@@ -1,22 +1,30 @@
-# Sprint 5 - Nivell 1
+<center><h1>Sprint 5 - Nivell 1</h1></center>
+
 ## Exercici 1
-A. Importa les dades de la base de dades emprada prèviament. 
-B. Després de carregar les dades, mostra el model de la base de dades en Power BI.
 
-Preguntas: ¿debo usar las tablas generadas o solo las que nos dieron?
+I) Realizo la conexion con MySQL para obtener la base de datos ***sales***, que fue la que creé en MySQL para el sprint_4.
 
-1. Realizo la conexion con MySQL para obtener la base de datos ***sales***, que fue la que creé en MySQL para el sprint_4.
+<center>        
 
-![](files_sprint_5/S5N1.png)
+![](files_sprint_5/S5N1.png)        
 
-- En este caso podemos ver las 8 tablas extraidas desde MySQL. ***card_status*** corresponde a aquella que creamos para el sprint_4.
+</center>     
 
 
-2. Ademas haré la creacion de la tabla ***users*** a partir de las tres tablas disponibles.
+<center>
+    <p style="line-height: 0.25;">En este caso podemos ver las 8 tablas extraídas desde MySQL.</p> 
+    <p style="line-height: 0.25;">Card_status corresponde a aquella que creamos para el sprint_4.</p>
+</center>
+
+II) Ademas haré la creacion de la tabla ***users*** a partir de las tres tablas disponibles.
 
 Para ello tengo el comando de ***anexar para crear nueva consulta***:
+<center>  
 
 ![](files_sprint_5/S5N1b.png)
+
+</center> 
+
 - Lo primero es que todos los id se llamen igual y que los datos sean anexables. Es decir que el tipo de dato de cada campo sea el mismo. 
 
 3. A las tablas les hago el *custom* de los campos.
@@ -90,3 +98,55 @@ Per a aconseguir això, serà necessari utilitzar DAX per a calcular i represent
 Genero un filtro para mostrar solo los meses con datos:
 
 ![](files_sprint_5/S5N1E6a.png)
+
+
+![](files_sprint_5/S5N1E6b.png)
+
+
+## Exercici 7
+
+Crea un gràfic de columnes agrupades que reflecteixi la sumatòria de les vendes per mes.        
+
+L'objectiu de l'empresa és tenir almenys 10.000 transaccions per mes.
+
+![](files_sprint_5/S5N1E7a.png)
+
+
+## Exercici 8
+
+En aquest exercici, es vol aprofundir en les transaccions realitzades per cada usuari/ària i presentar la informació de manera clara i comprensible. 
+
+Lo primero será crear aquellas columnas que solicitan como:
+
+| N | Campo            | Descripción                                             |
+|---|------------------|---------------------------------------------------------|
+| 1 | Nom i cognom     | Nombre y Apellido                                       |
+| 2 | Edat             | A partir de birth_date obtengo la edad                  |
+| 3 | Mitjana euros    | Media en Euros                                          |
+| 4 | Mitjana dòlars   | Media en Dólares a traves de la equivalencia entregada. |
+| 5 | Condición        | Cumple/No Cumple                                        |
+
+
+1. Nom i cognom
+
+![](files_sprint_5/S5N1E8a.png)
+
+2. Edat: .
+   
+3. Mitjana euros: Sumatoria de amount
+   
+4. Mitjana dòlars: Creo una nueva medida:
+   
+   ![](files_sprint_5/S5N1E8b.png)
+
+5.  La condicion queda reflejada en:
+   ![](files_sprint_5/S5N1E8c.png)
+
+   Finalmente la tabla es:
+
+   ![](files_sprint_5/S5N1E8d.png)
+
+
+## Exercici 9
+
+Redacta un paràgraf breu, de màxim 50 paraules, explicant el significat de les xifres presentades en les visualitzacions de Power BI. Pots interpretar les dades en general o centrar-te en algun país específic. Acompanya les interpretacions realitzades amb la captura de pantalla de les visualitzacions que analitzaràs
