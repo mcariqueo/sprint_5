@@ -149,4 +149,25 @@ Lo primero será crear aquellas columnas que solicitan como:
 
 ## Exercici 9
 
-Redacta un paràgraf breu, de màxim 50 paraules, explicant el significat de les xifres presentades en les visualitzacions de Power BI. Pots interpretar les dades en general o centrar-te en algun país específic. Acompanya les interpretacions realitzades amb la captura de pantalla de les visualitzacions que analitzaràs
+Redacta un paràgraf breu, de màxim 50 paraules, explicant el significat de les xifres presentades en les visualitzacions de Power BI. Pots interpretar les dades en general o centrar-te en algun país específic. Acompanya les interpretacions realitzades amb la captura de pantalla de les visualitzacions que analitzaràs:
+
+
+<center><h1>Sprint 5 - Nivell 2</h1></center>
+
+## Exercici 1
+
+
+
+
+## Exercici 2
+
+Creo el DAX de ventas totales de alemania: 
+
+![](files_sprint_5/S5N2E2a.png)
+
+**CALCULATE:** Esta función se utiliza para modificar el contexto de evaluación de otras funciones. En este caso, se utiliza para aplicar un filtro al cálculo de las ventas.   
+```SUM('sales transactions'[amount])```: Esto suma el monto de las ventas de la tabla 'sales transactions'.
+
+```FILTER('sales companies', 'sales companies'[country] = "germany")```: Esto filtra la tabla 'sales companies' para que solo incluya las filas donde el país es "germany".
+
+En resumen, esta expresión DAX calcula la suma de las ventas ('amount') en la tabla 'sales transactions', pero solo considera las ventas realizadas por empresas con sede en Alemania, según lo especificado en la tabla 'sales companies'. Si las relaciones entre las tablas están configuradas correctamente y los nombres de las columnas son precisos, esta DAX debería funcionar como se espera.
