@@ -131,15 +131,13 @@ Lo primero será crear aquellas columnas que solicitan como:
 
 ![](files_sprint_5/S5N1E8a.png)
 
-2. Edat: .
+2. Mitjana euros: Sumatoria de amount
    
-3. Mitjana euros: Sumatoria de amount
-   
-4. Mitjana dòlars: Creo una nueva medida:
+3. Mitjana dòlars: Creo una nueva medida:
    
    ![](files_sprint_5/S5N1E8b.png)
 
-5.  La condicion queda reflejada en:
+4.  La condicion queda reflejada en:
    ![](files_sprint_5/S5N1E8c.png)
 
    Finalmente la tabla es:
@@ -148,14 +146,17 @@ Lo primero será crear aquellas columnas que solicitan como:
 
 
 ## Exercici 9
-
 Redacta un paràgraf breu, de màxim 50 paraules, explicant el significat de les xifres presentades en les visualitzacions de Power BI. Pots interpretar les dades en general o centrar-te en algun país específic. Acompanya les interpretacions realitzades amb la captura de pantalla de les visualitzacions que analitzaràs:
+
+---
+**Análisis de KPIs de Ventas**
+
+Los KPIs proporcionan una visión del rendimiento durante el 2021, mientras que del 2022 se dispone de poca información. El año 2021, las ventas superaron ampliamente el objetivo anual, se superó la meta anual de transacciones. China y España tienen menos de 3 empresas, esto permite una oportunidad de mejora en estos mercados.
 
 
 <center><h1>Sprint 5 - Nivell 2</h1></center>
 
 ## Exercici 1
-
 
 
 
@@ -171,3 +172,18 @@ Creo el DAX de ventas totales de alemania:
 ```FILTER('sales companies', 'sales companies'[country] = "germany")```: Esto filtra la tabla 'sales companies' para que solo incluya las filas donde el país es "germany".
 
 En resumen, esta expresión DAX calcula la suma de las ventas ('amount') en la tabla 'sales transactions', pero solo considera las ventas realizadas por empresas con sede en Alemania, según lo especificado en la tabla 'sales companies'. Si las relaciones entre las tablas están configuradas correctamente y los nombres de las columnas son precisos, esta DAX debería funcionar como se espera.
+
+
+# Sprint 5 - Nivell 3
+## Exercici 1
+
+Les mesures estadístiques claus de les variables que consideris rellevants per a comprendre les transaccions realitzades pels usuaris/es: 
+- Quantitat de productes comprats per cada usuari/ària.       
+- Mitjana de vendes realitzades per usuari/ària, visualitza quins usuaris/es tenen una mitjana de vendes superior a 150 i quins no.
+- Comptabilitzar el preu del producte més car consumit per cada usuari/ària.
+- Visualitza la distribució geogràfica dels usuaris/es.
+
+
+Creo en MySQL una tabla que relacione los productos y los usuarios:
+
+[](files)
