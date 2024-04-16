@@ -16,7 +16,7 @@ I) Realizo la conexion con MySQL para obtener la base de datos ***sales***, que 
     <p style="line-height: 0.25;">Card_status corresponde a aquella que creamos para el sprint_4.</p>
 </center>
 
-II) Ademas haré la creacion de la tabla ***users*** a partir de las tres tablas disponibles.
+II) Ademas haré la creacion de la tabla ***users*** a partir de las tblas de users de los distintos paises.
 
 Para ello tengo el comando de ***anexar para crear nueva consulta***:
 <center>  
@@ -25,9 +25,9 @@ Para ello tengo el comando de ***anexar para crear nueva consulta***:
 
 </center> 
 
-- Lo primero es que todos los id se llamen igual y que los datos sean anexables. Es decir que el tipo de dato de cada campo sea el mismo. 
-
-3. A las tablas les hago el *custom* de los campos.
+- Inicialmente realizo dejo todos los ID con este nombre, para poder anexar las tablas y crear una tabla de users. A las tablas les hago el *custom* de los campos.
+  
+- El modelo final es el siguiente: 
 ![](files_sprint_5/S5N1c.png)
 
 Es importante tambien hacer enfasis en la necesidad de hacer `cast`de las variables. Por ejemplo, la fechas que estan como texto, hacerlas que esten es formato `fecha`
@@ -46,7 +46,7 @@ Per a aconseguir això, s'ha sol·licitat la creació d'un indicador clau de ren
 
     ![](files_sprint_5/S5N1E2a.png)
 
-3. Realizo el filtro de aceuerdo a `declined = 1`
+3. Realizo el filtro de aceuerdo a `declined = 0 `
    
     ![](files_sprint_5/S5N1E2c.png)
    
@@ -63,12 +63,13 @@ Mesura DAX  y resultado en etiqueta:
     ![](files_sprint_5/S5N1E3a.png)
 
 
-És important recordar que l'empresa té un objectiu de vendes establert en 250 transaccions.     
+És important recordar que l'empresa té un objectiu de vendes establert en 250 transaccions.  
+
 Lo primero es crear la nueva medida de KPI 250 transacciones:
 
 ![](files_sprint_5/S5N1E3b.png)
 
-Finalmente tenemos: 
+Finalmente, realizo una visualización de Finalmente tenemos: 
 
 ![](files_sprint_5/S5N1E3c.png)
 
@@ -166,12 +167,19 @@ Creo el DAX de ventas totales de alemania:
 
 ![](files_sprint_5/S5N2E2a.png)
 
-**CALCULATE:** Esta función se utiliza para modificar el contexto de evaluación de otras funciones. En este caso, se utiliza para aplicar un filtro al cálculo de las ventas.   
+   
 ```SUM('sales transactions'[amount])```: Esto suma el monto de las ventas de la tabla 'sales transactions'.
 
 ```FILTER('sales companies', 'sales companies'[country] = "germany")```: Esto filtra la tabla 'sales companies' para que solo incluya las filas donde el país es "germany".
 
-En resumen, esta expresión DAX calcula la suma de las ventas ('amount') en la tabla 'sales transactions', pero solo considera las ventas realizadas por empresas con sede en Alemania, según lo especificado en la tabla 'sales companies'. Si las relaciones entre las tablas están configuradas correctamente y los nombres de las columnas son precisos, esta DAX debería funcionar como se espera.
+En resumen: La expresión DAX que he utilizado, calcula la suma de las ventas ('amount') en la tabla 'sales transactions', considerando solo las ventas realizadas por empresas con sede en ```germany```, según lo especificado en la tabla '''sales companies'''.
+
+## Exercici 3
+Escriu un breu paràgraf, màxim de 25 paraules, indica en quin mes no es va arribar a complir amb l'objectiu proposat de l'exercici 1.
+
+#### Respuesta:
+Hubo 5 meses que no alcanzaron la meta. Será necesario analizar las causas (temporada baja, falta de campañas, etc.) para proponer estrategias de mejora y aumentar las ventas.
+
 
 
 # Sprint 5 - Nivell 3
